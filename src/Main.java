@@ -28,6 +28,7 @@ public class Main {
             if (q== 10)
                 return;
             System.out.print(q + " ");
+
         }
     }
 }
