@@ -43,9 +43,29 @@ public class Main {
           String wyraz = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
             System.out.println("Podaj znak króty chcesz sprawdzić:o p x z q");
             String text = scan.next();
-            switch (wyraz){
-                case
+        int[] tablica = {0, 0, 0, 0 ,0};
+
+        for (char zmiennaChar : text.toCharArray()) {
+            switch (zmiennaChar) {
+                case 'o':
+                    ++tablica[0];
+                    break;
+                case 'p':
+                    ++tablica[1];
+                    break;
+                case 'x':
+                    ++tablica[2];
+                    break;
+                case 'z':
+                    ++tablica[3];
+                    break;
+                case 'q':
+                    ++tablica[4];
+                    break;
             }
+        }
+        System.out.printf("znak występuje\no: %d - razy\np: %d - razy\nx: %d - razy\nz: %d - razy\nq: %d - razy",
+                tablica[0], tablica[1], tablica[2], tablica[3], tablica[4]);
         }
     }
 
